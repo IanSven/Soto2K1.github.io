@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html lang="es-MX">
+
+<head>
+	<meta name="author" content="Ian Svén">
+	<meta name="description" content="Práctica 2 - Shizune">
+	<meta name="keywords" content="CBTis No. 41">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<link rel="shortcut icon" href="extra/icon.png">
+	<link rel="stylesheet" type="text/css" href="extra/style-p2.css">
+	<link rel="stylesheet" type="text/css" href="../css/layout.css">
+	<link rel="stylesheet" type="text/css" href="../css/w3.css">
+
+	<title> Shizune </title>
+</head>
+
+<body background = "extra/mainbg.png">
+
+	<div class="flex-container">
+
+		<nav class="nav">
+			<ul>
+				<p> <strong> Navegación </strong> </p>
+				<li> <a href="../practica-1/p1.html" class=w3-button> Práctica 1 </a> </li>
+				<li> <a href="p2.html" class=w3-button> Práctica 2 </a> </li>
+				<ul>
+					<li> <a href="hisao.html" class=w3-button> Hisao </a> </li>
+					<li> <a href="emi.html" class=w3-button> Emi </a> </li>
+					<li> <a href="hanako.html" class=w3-button> Hanako </a> </li>
+					<li> <a href="lilly.html" class=w3-button> Lilly </a> </li>
+					<li> <a href="rin.html" class=w3-button> Rin </a> </li>
+					<li> <a href="#" class=w3-button> Shizune </a> </li>
+					<li> <a href="misha.html" class=w3-button> Misha </a> </li>
+				</ul>
+				<li> <a href="../practica-3/p3.html" class=w3-button> Práctica 3 </a> </li>
+				<li> <a href="../practica-4/p4.html" class=w3-button> Práctica 4 </a> </li>
+			</ul>
+		</nav>
+
+		<article class="article">
+			<img src="extra/char_shizune.png" alt="Shizune" style="float: left; width: 180px; height: 300px;">
+
+			<h1> <b> Shizune Hakamichi </b> </h1>
+			<div class="quote"> <b> <i> "Can you tell me what you think?" </i> </b> </div>
+
+			<div class="bio">
+				<h2> <b> Información General </b> </h2>
+
+				<p> Shizune Hakamichi (羽加道静音, <i> Hakamichi Shizune</i>) es una de las cinco protagonistas femeninas de Katawa Shoujo. 
+					Shizune es la representante de la Clase 3-3 de la Academia Yamaku y la presidente del Consejo Estudiantil. 
+					Ella es sorda, por lo que recurre al lenguaje de señas para comunicarse con los demás (aunque <a href="misha.html" 
+					style=text-decoration:none;color:black;> Misha </a> es su traductora la mayor parte del tiempo). Ella es muy diligente 
+					cuando se trata de su trabajo, y no soporta que la gente de su alrededor esté vagando o esquivando sus obligaciones. 
+					Es muy estricta con los demás, en contraste con su prima y representante de la Clase 3-2, <a href="lilly.html" 
+					style=text-decoration:none;color:black;> Lilly Satou</a>. </p>
+			</div>
+
+			<ul class="stats">
+				<h3> <b> Datos </b> </h3>
+				<li> Cumpleaños: 6 de mayo </li>
+				<li> Signo Zodiacal: Tauro </li>
+				<li> Tipo Sanguíneo: O </li>
+				<li> Altura: 158 cm </li>
+				<li> Peso: 53 kg </li>
+				<li> Medidas: 82/52/85 </li>
+				<li> Color de cabello: Azul Oscuro </li>
+				<li> Color de ojos: Azul </li>
+				<li> Tema: <i> The Student Council </i> </li>
+			</ul>
+
+		</article>
+
+	</div>
+
+		<div class="button" style="margin-left:250px;">
+			<audio id="ShizuneBG" <source src="extra/the-student-council.mp3" type='audio/mp3'>
+				Tu navegador no soporta el elemento HTML5 Audio.
+			</audio>
+			<button type="button" onclick="aud_play_pause();"> 🎵🎵🎵 </button>
+			<script>
+				function aud_play_pause() {
+					var ShizuneBG = document.getElementById("ShizuneBG");
+					if (ShizuneBG.paused) {
+						ShizuneBG.play();
+					} else {
+						ShizuneBG.pause();
+					}
+				}
+			</script>
+		</div>
+
+	<br><br><br><br>
+	<div class="footer">
+		<div class="w3-bar w3-bottom w3-light-gray w3-wide w3-padding-8 w3-card-2">
+			<a href="../index.html" class="w3-margin-left w3-bar-item w3-button"> <b> Ian Svén </b> </a>
+		</div>
+	</div>
+
+</body>
+
+</html>

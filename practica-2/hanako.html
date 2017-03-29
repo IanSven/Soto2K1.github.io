@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html lang="es-MX">
+
+<head>
+	<meta name="author" content="Ian Svén">
+	<meta name="description" content="Práctica 2 - Hanako">
+	<meta name="keywords" content="CBTis No. 41">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<link rel="shortcut icon" href="extra/icon.png">
+	<link rel="stylesheet" type="text/css" href="extra/style-p2.css">
+	<link rel="stylesheet" type="text/css" href="../css/layout.css">
+	<link rel="stylesheet" type="text/css" href="../css/w3.css">
+
+	<title> Hanako </title>
+</head>
+
+<body background = "extra/mainbg.png">
+
+	<div class="flex-container">
+
+		<nav class="nav">
+			<ul>
+				<p> <strong> Navegación </strong> </p>
+				<li> <a href="../practica-1/p1.html" class=w3-button> Práctica 1 </a> </li>
+				<li> <a href="p2.html" class=w3-button> Práctica 2 </a> </li>
+				<ul>
+					<li> <a href="hisao.html" class=w3-button> Hisao </a> </li>
+					<li> <a href="emi.html" class=w3-button> Emi </a> </li>
+					<li> <a href="#" class=w3-button> Hanako </a> </li>
+					<li> <a href="lilly.html" class=w3-button> Lilly </a> </li>
+					<li> <a href="rin.html" class=w3-button> Rin </a> </li>
+					<li> <a href="shizune.html" class=w3-button> Shizune </a> </li>
+					<li> <a href="misha.html" class=w3-button> Misha </a> </li>
+				</ul>
+				<li> <a href="../practica-3/p3.html" class=w3-button> Práctica 3 </a> </li>
+				<li> <a href="../practica-4/p4.html" class=w3-button> Práctica 4 </a> </li>
+			</ul>
+		</nav>
+
+		<article class="article">
+			<img src="extra/char_hanako.png" alt="Hanako" style="float: left; width: 180px; height: 300px;">
+
+			<h1> <b> Hanako Ikezawa </b> </h1>
+			<div class="quote"> <b> <i> "Can you face your fears?" </i> </b> </div>
+
+			<div class="bio">
+				<h2> <b> Información General </b> </h2>
+
+				<p> Hanako Ikezawa (池沢華子, <i>Ikezawa Hanako</i>) es una de las cinco protagonistas femeninas de Katawa Shoujo.
+				Ella tiene graves cicatrices en el lado derecho de su cuerpo debido a un incendio casero que se llevó la vida de sus padres. 
+				Después de haber perdida su única familia, Hanako se crió en un orfanato, llegando a ser el residente más antiguo. 
+				En respuesta a los años de burlas y acosos por sus compañeros de clase por las cicatrices que tenía, Hanako desarrolló ansiedad social. 
+				Como resultado de todo esto, ella es muy tímida y solamente confía en unas pocas personas cuya presencia parece relajarla. 
+				Hanako tiene el pelo largo, el cual utiliza para ocultar su cicatriz facial que es comunmente observada. </p>
+				<p> Hanako es una chica honesta, cree en la igualdad entre los amigos y le tiene un gran aprecio a las pocas personas que elige 
+					para pasar su tiempo. Como resultado de su ansiedad social, Hanako tiene una serie de intereses solitarios como el ajedrez, 
+					la lectura y el billar. Curiosamente, en contraste con su personalidad, a ella también le gusta el karaoke.  </p>
+			</div>
+
+			<ul class="stats">
+				<h3> <b> Datos </b> </h3>
+				<li> Cumpleaños: 10 de julio </li>
+				<li> Signo Zodiacal: Cáncer </li>
+				<li> Tipo Sanguíneo: AB </li>
+				<li> Altura: 164 cm </li>
+				<li> Peso: 52 kg </li>
+				<li> Medidas: 86/56/84 </li>
+				<li> Color de cabello: Púrpura </li>
+				<li> Color de ojos: Púrpura Grisáceo </li>
+				<li> Tema: <i> Painful Story </i> </li>
+			</ul>
+
+		</article>
+
+	</div>
+
+		<div class="button" style="margin-left:250px;">
+			<audio id="HanakoBG" <source src="extra/painful-history.mp3" type='audio/mp3'>
+				Tu navegador no soporta el elemento HTML5 Audio.
+			</audio>
+			<button type="button" onclick="aud_play_pause();"> 🎵🎵🎵 </button>
+			<script>
+				function aud_play_pause() {
+					var HanakoBG = document.getElementById("HanakoBG");
+					if (HanakoBG.paused) {
+						HanakoBG.play();
+					} else {
+						HanakoBG.pause();
+					}
+				}
+			</script>
+		</div>
+
+	<br><br><br><br>
+	<div class="footer">
+		<div class="w3-bar w3-bottom w3-light-gray w3-wide w3-padding-8 w3-card-2">
+			<a href="../index.html" class="w3-margin-left w3-bar-item w3-button"> <b> Ian Svén </b> </a>
+		</div>
+	</div>
+
+</body>
+
+</html>

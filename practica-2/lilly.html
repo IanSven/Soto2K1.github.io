@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html lang="es-MX">
+
+<head>
+	<meta name="author" content="Ian Svén">
+	<meta name="description" content="Práctica 2 - Lilly">
+	<meta name="keywords" content="CBTis No. 41">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<link rel="shortcut icon" href="extra/icon.png">
+	<link rel="stylesheet" type="text/css" href="extra/style-p2.css">
+	<link rel="stylesheet" type="text/css" href="../css/layout.css">
+	<link rel="stylesheet" type="text/css" href="../css/w3.css">
+
+	<title> Lilly </title>
+</head>
+
+<body background = "extra/mainbg.png">
+
+	<div class="flex-container">
+
+		<nav class="nav">
+			<ul>
+				<p> <strong> Navegación </strong> </p>
+				<li> <a href="../practica-1/p1.html" class=w3-button> Práctica 1 </a> </li>
+				<li> <a href="p2.html" class=w3-button> Práctica 2 </a> </li>
+				<ul>
+					<li> <a href="hisao.html" class=w3-button> Hisao </a> </li>
+					<li> <a href="emi.html" class=w3-button> Emi </a> </li>
+					<li> <a href="hanako.html" class=w3-button> Hanako </a> </li>
+					<li> <a href="#" class=w3-button> Lilly </a> </li>
+					<li> <a href="rin.html" class=w3-button> Rin </a> </li>
+					<li> <a href="shizune.html" class=w3-button> Shizune </a> </li>
+					<li> <a href="misha.html" class=w3-button> Misha </a> </li>
+				</ul>
+				<li> <a href="../practica-3/p3.html" class=w3-button> Práctica 3 </a> </li>
+				<li> <a href="../practica-4/p4.html" class=w3-button> Práctica 4 </a> </li>
+			</ul>
+		</nav>
+
+		<article class="article">
+			<img src="extra/char_lilly.png" alt="Lilly" style="float: left; width: 180px; height: 300px;">
+
+			<h1> <b> Lilly Satou </b> </h1>
+			<div class="quote"> <b> <i> "Can you see what I see?" </i> </b> </div>
+
+			<div class="bio">
+				<h2> <b> Información General </b> </h2>
+
+				<p> Lilly Satou (砂藤リリー, <i> Satō Rirī</i>) es una de las cinco protagonistas femeninas de Katawa Shoujo. 
+					Ciega de nacimiento, Lilly es bondadosa, responsable y amigable — el complemento perfecto para Hanako, 
+					su mejor amiga, con quien comparte una relación casi tan cercana como la de una madre con su hija, 
+					además de pasar frecuentemente sus ratos libres bebiendo té a su lado. Lilly es una estudiante diligente, 
+					cuya confianza le ayuda a cumplir su papel como representante de la clase 3-2.  </p>
+				<p> Lilly habla a menudo de una manera muy educada y formal, incluso con sus amigos cercanos. Ella es 
+					completamente ciega en ambos ojos, sin embargo, no le gusta que nadie se compadezca de ella por su 
+					falta de visión, por lo que ha crecido como una persona independiente con una fuerte voluntad. 
+					Le gusta ser vista como alguien a quien la gente puede admirar, y actúa como una figura materna 
+					para muchas personas a su alrededor, como sea Hanako, Hisao, o los miembros de su clase. </p>
+				<p>	Ella es mitad escocesa (por el lado de su madre) y mitad japonesa (por el lado de su padre). 
+					Como tal, Lilly tiene familia en Escocia, y aprendió inglés a una edad muy joven. </p>
+			</div>
+
+			<ul class="stats">
+				<h3> <b> Datos </b> </h3>
+				<li> Cumpleaños: 7 de febrero </li>
+				<li> Signo Zodiacal: Piscis </li>
+				<li> Tipo Sanguíneo: A </li>
+				<li> Altura: 171 cm </li>
+				<li> Peso: 59 kg </li>
+				<li> Medidas: 89/61/89 </li>
+				<li> Color de cabello: Rubio </li>
+				<li> Color de ojos: Azul </li>
+				<li> Tema: <i> Concord </i> </li>
+			</ul>
+
+		</article>
+
+	</div>
+
+		<div class="button" style="margin-left:250px;">
+			<audio id="LillyBG" <source src="extra/concord.mp3" type='audio/mp3'>
+				Tu navegador no soporta el elemento HTML5 Audio.
+			</audio>
+			<button type="button" onclick="aud_play_pause();"> 🎵🎵🎵 </button>
+			<script>
+				function aud_play_pause() {
+					var LillyBG = document.getElementById("LillyBG");
+					if (LillyBG.paused) {
+						LillyBG.play();
+					} else {
+						LillyBG.pause();
+					}
+				}
+			</script>
+		</div>
+
+	<br><br><br><br>
+	<div class="footer">
+		<div class="w3-bar w3-bottom w3-light-gray w3-wide w3-padding-8 w3-card-2">
+			<a href="../index.html" class="w3-margin-left w3-bar-item w3-button"> <b> Ian Svén </b> </a>
+		</div>
+	</div>
+
+</body>
+
+</html>

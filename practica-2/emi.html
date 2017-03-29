@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html lang="es-MX">
+
+<head>
+	<meta name="author" content="Ian Svén">
+	<meta name="description" content="Práctica 2 - Emi">
+	<meta name="keywords" content="CBTis No. 41">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<link rel="shortcut icon" href="extra/icon.png">
+	<link rel="stylesheet" type="text/css" href="extra/style-p2.css">
+	<link rel="stylesheet" type="text/css" href="../css/layout.css">
+	<link rel="stylesheet" type="text/css" href="../css/w3.css">
+
+	<title> Emi </title>
+</head>
+
+<body background = "extra/mainbg.png">
+
+	<div class="flex-container">
+
+		<nav class="nav">
+			<ul>
+				<p> <strong> Navegación </strong> </p>
+				<li> <a href="../practica-1/p1.html" class=w3-button> Práctica 1 </a> </li>
+				<li> <a href="p2.html" class=w3-button> Práctica 2 </a> </li>
+				<ul>
+					<li> <a href="hisao.html" class=w3-button> Hisao </a> </li>
+					<li> <a href="#" class=w3-button> Emi </a> </li>
+					<li> <a href="hanako.html" class=w3-button> Hanako </a> </li>
+					<li> <a href="lilly.html" class=w3-button> Lilly </a> </li>
+					<li> <a href="rin.html" class=w3-button> Rin </a> </li>
+					<li> <a href="shizune.html" class=w3-button> Shizune </a> </li>
+					<li> <a href="misha.html" class=w3-button> Misha </a> </li>
+				</ul>
+				<li> <a href="../practica-3/p3.html" class=w3-button> Práctica 3 </a> </li>
+				<li> <a href="../practica-4/p4.html" class=w3-button> Práctica 4 </a> </li>
+			</ul>
+		</nav>
+
+		<article class="article">
+			<img src="extra/char_emi.png" alt="Emi" style="float: left; width: 180px; height: 300px;">
+
+			<h1> <b> Emi Hibarazaki </b> </h1>
+			<div class="quote"> <b> <i> "Can you stand up for yourself?" </i> </b> </div>
+
+			<div class="bio">
+				<h2> <b> Información General </b> </h2>
+
+				<p> Emi Ibarazaki (茨崎笑美, <i> Ibarazaki Emi</i>) es una de las cinco protagonistas femeninas de Katawa Shoujo. A pesar de
+					tener ambas piernas amputadas por debajo de la rodilla, Emi es quizás una de las chicas más alegres y despreocupadas
+					del mundo entero, sin mencionar de la escuela. Sin ser de quienes caen en la desesperanza, incluso después del accidente
+					que le costó sus piernas, Emi ve su discapacidad más como una bendición; siendo sus prótesis de piernas las que la han
+					llevado a desarrollar su potencial en el equipo de atletismo en lugar de convertirse en un obstáculo permanente. Debido
+					a esa determinación, Emi es excepcionalmente obtinada, a menudo empujandose a sí misma (y también a <a href="misha.html" 
+					style=text-decoration:none;color:black;> Misha </a>) demasiado, lo que resulta en más visitas de lo normal con el enfermero, 
+					con quien Emi tiene una muy buena relación. </p>
+			</div>
+
+			<ul class="stats">
+				<h3> <b> Datos </b> </h3>
+				<li> Cumpleaños: 14 de marzo </li>
+				<li> Signo Zodiacal: Piscis </li>
+				<li> Tipo Sanguíneo: B </li>
+				<li> Altura: 151 cm </li>
+				<li> Peso: 41 kg </li>
+				<li> Medidas: 70/51/74 </li>
+				<li> Color de cabello: Castaño Claro </li>
+				<li> Color de ojos: Verde Álamo </li>
+				<li> Tema: <i> Standing Tall </i> </li>
+			</ul>
+
+		</article>
+
+	</div>
+
+		<div class="button" style="margin-left:250px;">
+			<audio id="EmiBG" <source src="extra/standing-tall.mp3" type='audio/mp3'>
+				Tu navegador no soporta el elemento HTML5 Audio.
+			</audio>
+			<button type="button" onclick="aud_play_pause();"> 🎵🎵🎵 </button>
+			<script>
+				function aud_play_pause() {
+					var EmiBG = document.getElementById("EmiBG");
+					if (EmiBG.paused) {
+						EmiBG.play();
+					} else {
+						EmiBG.pause();
+					}
+				}
+			</script>
+		</div>
+
+	<br><br><br><br>
+	<div class="footer">
+		<div class="w3-bar w3-bottom w3-light-gray w3-wide w3-padding-8 w3-card-2">
+			<a href="../index.html" class="w3-margin-left w3-bar-item w3-button"> <b> Ian Svén </b> </a>
+		</div>
+	</div>
+
+</body>
+
+</html>

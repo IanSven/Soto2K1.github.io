@@ -1,0 +1,48 @@
+body {
+	background-color: lightblue;
+}
+
+header {
+	background: black;
+	color: white;
+}
+
+h1 {
+	color: black;
+	text-shadow: -1.5px 0 #FFFFFF, 0 1.5px #FFFFFF, 1.5px 0 #FFFFFF, 0 -1.5px #FFFFFF;
+	text-align: center;
+	font-family: verdana;
+	font-size: 28px;
+}
+
+h2 {
+	color: black;
+	text-align: justify;
+	font-family: verdana;
+	font-size: 20px;
+}
+
+p {
+	font-family: verdana;
+	font-size: 20px;
+	text-align: justify;
+}
+
+a {
+	font-family: verdana;
+	font-size: 20px;
+	text-align: justify;
+	color:#1A0DAB;
+}
+
+a:link    {color:#1A0DAB; background-color:transparent; text-decoration:none}
+a:visited {color:#660099; background-color:transparent; text-decoration:none}
+a:hover   {background-color:transparent; text-decoration:underline}
+a:active  {color:#1A0DAB; background-color:transparent; text-decoration:underline}
+
+h3 {
+	color: black;
+	text-align: justify;
+	font-family: verdana;
+	font-size: 18px;
+}

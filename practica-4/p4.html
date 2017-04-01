@@ -1,12 +1,12 @@
-<!doctype HTML> 
+<!DOCTYPE HTML> 
 
-<html>
+<html lang="es-MX">
     <head>
         <meta name="author" content="Ian Svén">
         <meta name="description" content="Práctica 4 - Menú">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
-        <link rel="shortcut icon" href="extra/icon.ico">
+        <link rel="shortcut icon" href="extra/euler.png">
         <link rel="stylesheet" type="text/css" href="extra/style-p4.css">
         <link rel="stylesheet" type="text/css" href="../css/layout.css">
         <link rel="stylesheet" type="text/css" href="../css/w3.css">
@@ -14,7 +14,7 @@
         <title> Práctica No. 4 </title>
     </head>
 
-    <body background="extra/background.png">
+    <body background="extra/white.jpg">
 
 	<div class="flex-container">
 
@@ -25,15 +25,12 @@
 				<li> <a href="../practica-2/p2.html" class=w3-button> Práctica 2 </a> </li>
 				<li> <a href="../practica-3/p3.html" class=w3-button> Práctica 3 </a> </li>
 				<li> <a href="#" class=w3-button> Práctica 4 </a> </li>
-            <ul>
-                <li> <a href="brute.html" class=w3-button> Brute </a> </li>
-                <li> <a href="drone.html" class=w3-button> Drone </a> </li>
-                <li> <a href="elite.html" class=w3-button> Elite </a> </li>
-                <li> <a href="grunt.html" class=w3-button> Grunts </a> </li>
-                <li> <a href="hunter.html" class=w3-button> Hunter </a> </li>
-                <li> <a href="jackal.html" class=w3-button> Jackal </a> </li>
-                <li> <a href="profeta.html" class=w3-button> Prophet </a> </li>
-            </ul>
+				<ul>
+					<li> <a href="p4.html#start" class=w3-button> Introducción </a> </li>
+					<li> <a href="p4.html#expl" class=w3-button> Explicación </a> </li>
+					<li> <a href="p4.html#moivre" class=w3-button> Fórmula de Moivre </a> </li>
+				</ul>
+				<li> <a href="../practica-5/p5.html" class=w3-button> Práctica 5 </a> </li>
             </ul>
 		</nav>
 
@@ -41,13 +38,39 @@
 
 			<article class="article">
 			
-			<h1> <strong> Covenant </strong> </h1>
+			<h1 id="start"> <strong> Identidad de Euler </strong> </h1>
 
 			<div class="bio">
 
-				<p> Esto aún no ha sido comenzado, salga de aquí por favor. <br> <i> piu piu </i> </p>
-
+				<p> Se llama identidad de Euler a un caso especial de la fórmula desarrollada por Leonhard Euler, notable por relacionar cinco 
+					números muy utilizados en la historia de las matemáticas y que pertenecen a distintas ramas de la misma: 
+					<b>e<sup>i&Pi;</sup> + 1 = 0</b> <br>
+					donde: <br>
+					<li> &Pi; (número pi) es un número irracional y trascendente que relaciona la longitud de la circunferencia con su diámetro y 
+						está presente en varias de las ecuaciones más fundamentales de la física. </li>
+					<li> e (número de Euler) es la suma de la serie que aparece en numerosos procesos naturales y en diferentes problemas físicos 
+						y matemáticos y es también un número irracional y trascendente. </li>
+					<li> i (unidad imaginaria) es la raíz cuadrada de -1, a partir del cuál se construye el conjunto de los números complejos. </li>
+					<li> 0 y 1 son los elementos neutros respectivamente de la adición y la multiplicación. </li> </p>
 			</div>
+
+			<h2 id="expl"> <b> Explicación </b> </h2>
+			<p> La identidad es un caso especial de la Fórmula de Euler, la cual especifica que <br> &nbsp;&nbsp;&nbsp;&nbsp;e<sup>i&Pi;</sup> = cos(x) 
+				+ i sen(x) <br> para cualquier número real <i>x</i>. (Nótese que los argumentos para las funciones trigonométricas <i>sen</i> y 
+				<i>cos</i> se toman n radianes.) En particular si <br> &nbsp;&nbsp;&nbsp;&nbsp;<b>x = &Pi;</b> <br> entonces <br> &nbsp;&nbsp;&nbsp;
+				&nbsp;e<sup>i&Pi;</sup> = cos(&Pi;) + i sen(&Pi;) <br> y ya que <br> &nbsp;&nbsp;&nbsp;&nbsp; cos(&Pi;) = -1 <br> y que <br> 
+				&nbsp;&nbsp;&nbsp;&nbsp; sen(&Pi;) = 0 <br> se sigue que <br> &nbsp;&nbsp;&nbsp;&nbsp; e<sup>i&Pi;</sup> = -1 <br> Lo que implica la 
+				identidad <br> &nbsp;&nbsp;&nbsp;&nbsp; e<sup>i&Pi;</sup> + 1 = 0 </p>
+
+			<h3 id="moivre"> <b> Fórmula de Moivre </b> </h3>
+			<p>	La fórmula de De Moivre nombrada así por Abraham de Moivre afirma que para cualquier número complejo (y en particular, para cualquier 
+				número real) x y para cualquier entero n se verifica que: <br>
+				(cos <i>x</i> + i sin <i>x</i>)<sup>n</sup> = cos(<i>nx</i>) + i sin(<i>nx</i>). <br> Esta fórmula es importante porque conecta a los 
+				números complejos (<i>i</i> significa unidad imaginaria) con la trigonometría. La expresión "cos(x) + i sen(x)" a veces se abrevia como 
+				cis x. <br> Al expandir la parte izquierda de la igualdad y comparando la parte real con la imaginaria, es posible derivar expresiones 
+				muy útiles para cos(nx) y sen(nx) en términos de cos(x) y sen(x). Además, esta fórmula puede ser utilizada para encontrar expresiones 
+				explícitas para la enésima raíz de la unidad, eso es, números complejos <i>z</i> tal que <i>z<sup>n</sup></i> = 1. <br> Abraham De 
+				Moivre fue amigo de Newton; en 1698 este último escribió que ya conocía dicha fórmula desde 1676. </p>
 
 		</article>
 

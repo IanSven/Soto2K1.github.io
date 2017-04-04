@@ -1,3 +1,5 @@
+body {background-color:#d3d3d3}
+
 h1 {
 	color: black;
 	text-shadow: -1.5px 0 #FFFFFF, 0 1.5px #FFFFFF, 1.5px 0 #FFFFFF, 0 -1.5px #FFFFFF;
@@ -6,18 +8,8 @@ h1 {
 	font-size: 28px;
 }
 
-h2 {
-	color: black;
-	text-align: justify;
-	font-family: verdana;
-	font-size: 20px;
-}
-
-p {
-	font-family: verdana;
-	font-size: 20px;
-	text-align: justify;
-}
+th {border: 3px solid black; text-align: center}
+td {border: 3px solid black; text-align: center}
 
 a {
 	font-family: verdana;
@@ -30,24 +22,7 @@ a:visited {color:#1A0DAB; background-color:transparent; text-decoration:none}
 a:hover   {background-color:transparent; text-decoration:underline}
 a:active  {color:#1A0DAB; background-color:transparent; text-decoration:underline}
 
-h3 {
-	color: black;
-	text-align: justify;
-	font-family: verdana;
-	font-size: 18px;
-}
-
-img {border-radius: 8px; border: 1px solid #DDD;}
-
-/*img {
-    border: 1px solid #DDD;
-    border-radius: 4px;
-    padding: 5px;
-} */
-
-img:hover {
-    box-shadow: 0 0 4px 4px rgba(0, 140, 186, 0.5);
-}
+img {border-radius: 8px; border: 1px solid #DDD; width:40px;height:40px;}
 
 ul {
 	color: black;

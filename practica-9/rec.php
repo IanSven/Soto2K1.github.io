@@ -5,7 +5,7 @@
         <meta name="description" content="Práctica 9">
         <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
         <meta charset="UTF-8">
-        <link rel="shortcut icon" href="extra/icon.png">
+        <link rel="shortcut icon" href="extra/.png">
         <link rel="stylesheet" type="text/css" href="extra/style-p9.css">
         <link rel="stylesheet" type="text/css" href="extra/w3.css">
         <link rel="stylesheet" type="text/css" href="extra/layout.css">
@@ -16,7 +16,7 @@
 
     <body>
 
-        <div class="flex-container">
+        <div class="flex-container"> 
 
             <nav class="nav w3-light-gray">
                 <ul>
@@ -38,34 +38,15 @@
             <article class="article">
             <center>
             <h1> <b> Área geométrica de polígonos </b> </h1>
+            <h2> Área del rectángulo </h2>
             <?php
-                $figura=$_GET{'fig'};
-                if ($figura=="sqr") {
-                    echo "<h2> Área del cuadrado </h2>";
-                    echo '<form action="sqr.php" method="get">';
-                    echo '<input type="number" name="lado" min="1" step="any" required> Valor del lado <br>';
-                    echo "<input type='submit' value='Aceptar'> </form>";
-                }
-                else if ($figura=="tri") {
-                    echo "<h2> Área del triángulo </h2>";
-                    echo '<form action="tri.php" method="get">';
-                    echo '<input type="number" name="base" min="1" step="any" required> Valor de la base <br>';
-                    echo '<input type="number" name="altura" min="1" step="any" required> Valor de la altura <br>';
-                    echo "<input type='submit' value='Aceptar'> </form>";
-                }
-                else if ($figura=="rec") {
-                    echo "<h2> Área del rectángulo </h2>";
-                    echo '<form action="rec.php" method="get">';
-                    echo '<input type="number" name="base" min="1" step="any" required> Valor de la base <br>';
-                    echo '<input type="number" name="altura" min="1" step="any" required> Valor de la altura <br>';
-                    echo "<input type='submit' value='Aceptar'> </form>";
-                }
-                else if ($figura=="cir") {
-                    echo "<h2> Área del círculo </h2>";
-                    echo '<form action="cir.php" method="get">';
-                    echo '<input type="number" name="radio" min="1" step="any" required> Valor del radio <br>';
-                    echo "<input type='submit' value='Aceptar'> </form>";
-                }
+                $base=$_GET{'base'};
+                $altura=$_GET{'altura'};
+                echo "Valor de la base = $base metros. <br>";
+                echo "Valor de la altura = $altura metros. <br>";
+                echo "Formula: A = b(h) <br>";
+                $area=($altura*$base);
+                echo "Área = ($altura m)($base m) = $area m<sup>2</sup>.";
             ?> 
             </center>
             </article>

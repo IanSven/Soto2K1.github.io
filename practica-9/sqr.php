@@ -38,34 +38,13 @@
             <article class="article">
             <center>
             <h1> <b> Área geométrica de polígonos </b> </h1>
+            <h2> Área del cuadrado </h2>
             <?php
-                $figura=$_GET{'fig'};
-                if ($figura=="sqr") {
-                    echo "<h2> Área del cuadrado </h2>";
-                    echo '<form action="sqr.php" method="get">';
-                    echo '<input type="number" name="lado" min="1" step="any" required> Valor del lado <br>';
-                    echo "<input type='submit' value='Aceptar'> </form>";
-                }
-                else if ($figura=="tri") {
-                    echo "<h2> Área del triángulo </h2>";
-                    echo '<form action="tri.php" method="get">';
-                    echo '<input type="number" name="base" min="1" step="any" required> Valor de la base <br>';
-                    echo '<input type="number" name="altura" min="1" step="any" required> Valor de la altura <br>';
-                    echo "<input type='submit' value='Aceptar'> </form>";
-                }
-                else if ($figura=="rec") {
-                    echo "<h2> Área del rectángulo </h2>";
-                    echo '<form action="rec.php" method="get">';
-                    echo '<input type="number" name="base" min="1" step="any" required> Valor de la base <br>';
-                    echo '<input type="number" name="altura" min="1" step="any" required> Valor de la altura <br>';
-                    echo "<input type='submit' value='Aceptar'> </form>";
-                }
-                else if ($figura=="cir") {
-                    echo "<h2> Área del círculo </h2>";
-                    echo '<form action="cir.php" method="get">';
-                    echo '<input type="number" name="radio" min="1" step="any" required> Valor del radio <br>';
-                    echo "<input type='submit' value='Aceptar'> </form>";
-                }
+                $lado=$_GET{'lado'};
+                echo "Valor del lado = $lado metros. <br>";
+                echo "Formula: A = l<sup>2</sup><br>";
+                $area=$lado*$lado;
+                echo "Área = ($lado m)<sup>2</sup> = $area m<sup>2</sup>."
             ?> 
             </center>
             </article>

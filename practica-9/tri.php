@@ -42,11 +42,11 @@
             <?php
                 $base=$_GET{'base'};
                 $altura=$_GET{'altura'};
-                echo "Valor de la base = $base metros. <br>";
+                echo "<b>Valor de la base = $base metros. <br>";
                 echo "Valor de la altura = $altura metros. <br>";
                 echo "Formula: A = <sup>bh</sup>&frasl;<sub>2</sub> <br>";
                 $area=($altura*$base)/2;
-                echo "Área = <sup>($altura m)($base m)</sup>&frasl;<sub>2</sub> = $area m<sup>2</sup>.";
+                echo "Área = <sup>($altura m)($base m)</sup>&frasl;<sub>2</sub> = $area m<sup>2</sup>.</b>";
             ?> 
             </center>
             </article>

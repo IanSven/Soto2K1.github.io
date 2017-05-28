@@ -29,6 +29,7 @@
                     <li> <a href="../practica-6/p6.html" class=w3-button> Práctica 6 </a> </li>
                     <li> <a href="../practica-7/p7.html" class=w3-button> Práctica 7 </a> </li>
                     <li> <a href="p8.html" class=w3-button> Práctica 8 </a> </li>
+                    <li> <a href="../practica-9/p9.html" class=w3-button> Práctica 9 </a> </li>
                 </ul>
             </nav>
 

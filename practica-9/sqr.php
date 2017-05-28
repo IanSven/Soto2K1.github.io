@@ -41,10 +41,10 @@
             <h2> Área del cuadrado </h2>
             <?php
                 $lado=$_GET{'lado'};
-                echo "Valor del lado = $lado metros. <br>";
+                echo "<b>Valor del lado = $lado metros. <br>";
                 echo "Formula: A = l<sup>2</sup><br>";
                 $area=$lado*$lado;
-                echo "Área = ($lado m)<sup>2</sup> = $area m<sup>2</sup>."
+                echo "Área = ($lado m)<sup>2</sup> = $area m<sup>2</sup>.</b>"
             ?> 
             </center>
             </article>

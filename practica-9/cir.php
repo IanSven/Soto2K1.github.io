@@ -41,10 +41,10 @@
             <h2> Área del círculo </h2>
             <?php
                 $radio=$_GET{'radio'};
-                echo "Valor del radio = $radio metros. <br>";
+                echo "<b>Valor del radio = $radio metros. <br>";
                 echo "Formula: A = &#960(r<sup>2</sup>) <br>";
                 $area=M_PI*$radio*$radio;
-                echo "Área = (3.14)($radio m)<sup>2</sup> = $area m<sup>2</sup>.";
+                echo "Área = (3.14)($radio m)<sup>2</sup> = $area m<sup>2</sup>.</b>";
             ?> 
             </center>
             </article>

@@ -39,36 +39,37 @@
             <center>
             <h1> <b> Área geométrica de polígonos </b> </h1>
             <?php
-                $figura=$_GET{'fig'};
-                if ($figura=="sqr") {
-                    echo "<h2> Área del cuadrado </h2>";
-                    echo '<form action="sqr.php" method="get">';
-                    echo '<input type="number" name="lado" min="1" step="any" required> Valor del lado <br>';
-                    echo "<input type='submit' value='Aceptar'> </form>";
-                }
-                else if ($figura=="tri") {
-                    echo "<h2> Área del triángulo </h2>";
-                    echo '<form action="tri.php" method="get">';
-                    echo '<input type="number" name="base" min="1" step="any" required> Valor de la base <br>';
-                    echo '<input type="number" name="altura" min="1" step="any" required> Valor de la altura <br>';
-                    echo "<input type='submit' value='Aceptar'> </form>";
-                }
-                else if ($figura=="rec") {
-                    echo "<h2> Área del rectángulo </h2>";
-                    echo '<form action="rec.php" method="get">';
-                    echo '<input type="number" name="base" min="1" step="any" required> Valor de la base <br>';
-                    echo '<input type="number" name="altura" min="1" step="any" required> Valor de la altura <br>';
-                    echo "<input type='submit' value='Aceptar'> </form>";
-                }
-                else if ($figura=="cir") {
-                    echo "<h2> Área del círculo </h2>";
-                    echo '<form action="cir.php" method="get">';
-                    echo '<input type="number" name="radio" min="1" step="any" required> Valor del radio <br>';
-                    echo "<input type='submit' value='Aceptar'> </form>";
+                if (isset ($_GET{'fig'})) {
+                    $figura=$_GET{'fig'};
+                    if ($figura=="sqr") {
+                        echo "<h2> Área del cuadrado </h2>";
+                        echo '<form action="sqr.php" method="get">';
+                        echo '<input type="number" name="lado" min="1" step="any" required> Valor del lado <br>';
+                        echo "<input type='submit' value='Aceptar'> </form>";
+                    }
+                    else if ($figura=="tri") {
+                        echo "<h2> Área del triángulo </h2>";
+                        echo '<form action="tri.php" method="get">';
+                        echo '<input type="number" name="base" min="1" step="any" required> Valor de la base <br>';
+                        echo '<input type="number" name="altura" min="1" step="any" required> Valor de la altura <br>';
+                        echo "<input type='submit' value='Aceptar'> </form>";
+                    }
+                    else if ($figura=="rec") {
+                        echo "<h2> Área del rectángulo </h2>";
+                        echo '<form action="rec.php" method="get">';
+                        echo '<input type="number" name="base" min="1" step="any" required> Valor de la base <br>';
+                        echo '<input type="number" name="altura" min="1" step="any" required> Valor de la altura <br>';
+                        echo "<input type='submit' value='Aceptar'> </form>";
+                    }
+                    else if ($figura=="cir") {
+                        echo "<h2> Área del círculo </h2>";
+                        echo '<form action="cir.php" method="get">';
+                        echo '<input type="number" name="radio" min="1" step="any" required> Valor del radio <br>';
+                        echo "<input type='submit' value='Aceptar'> </form>";
+                    }
                 }
                 else {
-                    echo "<h2> Área de polígonos </h2>";
-                    echo "No se seleccionó ningúna opción.";
+                    echo "<h3> <b> No se seleccionó ninguna opción. </b> </h3>";
                 }
             ?> 
             </center>

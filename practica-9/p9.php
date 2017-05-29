@@ -66,6 +66,10 @@
                     echo '<input type="number" name="radio" min="1" step="any" required> Valor del radio <br>';
                     echo "<input type='submit' value='Aceptar'> </form>";
                 }
+                else {
+                    echo "<h2> Área de polígonos </h2>";
+                    echo "No se seleccionó ningúna opción.";
+                }
             ?> 
             </center>
             </article>

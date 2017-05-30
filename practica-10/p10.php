@@ -4,7 +4,7 @@
 
     <head>
         <meta name="author" content="Ian Svén">
-        <meta name="description" content="Práctica 9">
+        <meta name="description" content="Práctica 10">
         <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
         <meta charset="UTF-8">
         <link rel="shortcut icon" href="extra/icon.png">
@@ -31,6 +31,7 @@
                     <li> <a href="../practica-6/p6.html" class=w3-button> Práctica 6 </a> </li>
                     <li> <a href="../practica-7/p7.html" class=w3-button> Práctica 7 </a> </li>
                     <li> <a href="../practica-8/p8.html" class=w3-button> Práctica 8 </a> </li>
+                    <li> <a href="../practica-9/p9.html" class=w3-button> Práctica 9 </a> </li>
                     <li> <a href="../practica-10/p10.html" class=w3-button> Práctica 10 </a> </li>
                     <br> <br>
                 </ul>
@@ -53,15 +54,22 @@
                             echo "<p style=font-size:20px>Se ha seleccionado un color:</p>";
                             for ($x=0; $x<$cant; $x++) {
                                 echo "<p style=font-size:20px>";
-                                echo $iro[$x]. "</p>";
+                                echo $iro[$x]. ".</p>";
                             } 
                         }
                         else {
                             echo "<p style=font-size:20px>Se han seleccionado $cant colores:</p>";
+                            echo "<p style=font-size:20px>";
                             for ($x=0; $x<$cant; $x++) {
-                                echo "<p style=font-size:20px>";
-                                echo $iro[$x]. "</p>";
-                            } 
+                                echo $iro[$x];
+                                if ($x < ($cant-2)) {
+                                    echo ", ";
+                                }
+                                elseif ($x < ($cant-1)) {
+                                    echo " y ";
+                                }
+                            }
+                            echo '.</p>';
                         }
                     } 
                 ?>
